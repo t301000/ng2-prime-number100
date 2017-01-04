@@ -32,6 +32,12 @@ export class ContainerComponent implements OnInit {
     this.selected.push(num);
   }
 
+  onHidden(): void {
+    this.hidden.concat(this.selected);
+    this.selected = [];
+    this.divisor = 1;
+  }
+
   ngOnInit() {
   }
 
