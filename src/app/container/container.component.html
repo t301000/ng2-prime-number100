@@ -1,6 +1,10 @@
 <div class="cell" *ngFor="let num of numbers"
+  [ngClass]="getStatusClass(num)"
   (click)="onClick(num)">
   {{ num }}
 </div>
-除數：{{ divisor }}<br>
-選擇的數：{{ selected | json }}
+
+<div style="text-align: center">
+  <button (click)="onHidden()">隱藏</button>
+  <button (click)="onReset()">重設</button>
+</div>
