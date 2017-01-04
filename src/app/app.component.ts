@@ -7,5 +7,5 @@ import {Title} from "@angular/platform-browser";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '請找出 100 以內的質數';
+  title = '找出 100 以內的質數';
 }
