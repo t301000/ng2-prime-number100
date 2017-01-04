@@ -1,1 +1,6 @@
-<div class="cell" *ngFor="let num of numbers">{{ num }}</div>
+<div class="cell" *ngFor="let num of numbers"
+  (click)="onClick(num)">
+  {{ num }}
+</div>
+除數：{{ divisor }}<br>
+選擇的數：{{ selected | json }}
